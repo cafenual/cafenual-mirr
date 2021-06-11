@@ -1,0 +1,28 @@
+.headerleft {
+  align-items: center;
+  display: flex;
+  border-bottom: 2px solid;
+}
+.header-logo {
+  padding-top: 18px;
+  padding-left: 10px;
+}
+span.cn {
+  font-size: 50px;
+  padding-left: 15px;
+}
+
+.headermenu {
+  display: flex;
+  width: 42%;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+span {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.flexbox {
+  display: flex;
+  align-items: center;
+}

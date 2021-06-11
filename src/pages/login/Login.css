@@ -1,0 +1,17 @@
+#login .signup {
+  font-size: 12px;
+}
+#login .login {
+  margin-top: 150px;
+  height: 500px;
+  text-align: center;
+  vertical-align: middle;
+}
+#login input {
+  width: 380px;
+  margin: 20px;
+  padding: 10px;
+}
+#login legend {
+  font-size: 40px;
+}

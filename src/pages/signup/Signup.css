@@ -1,0 +1,58 @@
+#background {
+  height: calc(100vh);
+}
+#background .container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#background .middle {
+  display: block;
+  height: 1000px;
+  width: 600px;
+}
+#background .name {
+  width: 40px;
+  margin-left: -360px;
+}
+#background input[type="email"] {
+  width: 368px;
+}
+#background .caution,
+.textprint {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  font-size: 15px;
+}
+#background form {
+  height: 1000px;
+  width: 800px;
+  font-size: 35px;
+  padding: 10px;
+}
+#background input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 2px solid #cd853f;
+}
+#background h1 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+#background input[name="lname"],
+[name="fname"] {
+  width: 188px;
+}
+#background a {
+  font-size: 17px;
+  border-radius: 30px;
+  color: #666262;
+}
+#background input[type="submit"] {
+  border: 0px;
+  width: 100px;
+  height: 50px;
+}

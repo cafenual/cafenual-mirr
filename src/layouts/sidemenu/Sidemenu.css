@@ -1,0 +1,8 @@
+#sidemenu {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  border-right: 1px solid black;
+}

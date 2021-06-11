@@ -1,0 +1,59 @@
+#dashboard {
+  .allmenu {
+    display: flex;
+  }
+}
+
+#dashboard .menul {
+  flex-grow: 2;
+}
+
+#dashboard .menuevent {
+  display: flex;
+}
+
+#dashboard .menu {
+  flex-grow: 1;
+}
+
+#dashboard .schedule {
+  flex-grow: 2;
+}
+
+#dashboard .menur {
+  flex-grow: 1;
+}
+
+#dashboard .menu,
+.schedule {
+  height: 700px;
+}
+
+#dashboard .profile,
+.worklist {
+  height: 402px;
+}
+#dashboard .notice {
+  height: 100px;
+  box-shadow: 5px 5px lightgray;
+  margin: 5px;
+}
+#dashboard .menu,
+.schedule,
+.profile,
+.worklist {
+  margin: 5px;
+  box-shadow: 5px 5px lightgray;
+}
+
+@media screen and (max-width: 1500px) {
+  #dashboard {
+    .allmenu {
+      .menur {
+        .profile {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
