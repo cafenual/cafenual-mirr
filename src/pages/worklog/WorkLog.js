@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./WorkLog.css";
+import "./WorkLog.scss";
 
 const WorkLog = () => {
   const [currentTime, setCurrentTime] = useState("");
