@@ -1,4 +1,5 @@
 import React from "react";
+import "./Sidemenu.scss";
 
 const Sidemenu = () => {
   return (
@@ -10,7 +11,6 @@ const Sidemenu = () => {
         <div className="Home">
           <span>Home</span>
         </div>
-        
       </div>
     </div>
   );

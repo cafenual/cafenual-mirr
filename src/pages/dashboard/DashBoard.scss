@@ -1,4 +1,5 @@
 #dashboard {
+  margin-left: 251px;
   .allmenu {
     display: flex;
     .menul {
@@ -46,7 +47,7 @@
   box-shadow: 5px 5px lightgray;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1250px) {
   #dashboard {
     .allmenu {
       .menur {

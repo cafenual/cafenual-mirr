@@ -5,6 +5,7 @@ import Login from "./pages/login/Login";
 import Header from "./layouts/header/Header";
 import { BrowserRouter } from "react-router-dom";
 import DashBoardAD from "pages/dashboard/DashBoardAD";
+import Sidemenu from "layouts/sidemenu/Sidemenu";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/*헤더랑 화면이 같이 뜨게 하는법 */}
       <BrowserRouter>
         <Header />
+        <Sidemenu />
         <div>
           <Switch>
             <Route path="/worklog" component={WorkLog} />
