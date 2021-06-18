@@ -1,11 +1,11 @@
 import { Route, Switch } from "react-router";
-import WorkLog from "./pages/worklog/WorkLog";
-import Signup from "./pages/signup/Signup";
-import Login from "./pages/login/Login";
-import Header from "./layouts/header/Header";
+import WorkLog from "./pages/Worklog/WorkLog";
+import Signup from "./pages/Signup/Signup";
+import Login from "./pages/Login/Login";
+import Header from "./layouts/Header/Header";
 import { BrowserRouter } from "react-router-dom";
-import DashBoardAD from "pages/dashboard/DashBoardAD";
-import Sidemenu from "layouts/sidemenu/Sidemenu";
+import DashBoardAD from "pages/Dashboard/DashBoardAD";
+import Sidemenu from "layouts/Sidemenu/Sidemenu";
 
 function App() {
   return (
