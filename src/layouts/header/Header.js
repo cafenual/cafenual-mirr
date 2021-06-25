@@ -14,7 +14,7 @@ const Header = () => {
         <div className="headermenu">
           <div className="notice flexbox">
             <ImBell size="40" />
-            <span>공지사항</span>
+            <a href="/notice">공지사항</a>
           </div>
           <div className="recipe flexbox">
             <ImSpoonKnife size="40" />

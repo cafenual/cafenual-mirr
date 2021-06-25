@@ -5,7 +5,9 @@ import Login from "./pages/Login/Login";
 import Header from "./layouts/Header/Header";
 import { BrowserRouter } from "react-router-dom";
 import DashBoardAD from "pages/Dashboard/DashBoardAD";
-import Sidemenu from "layouts/Sidemenu/Sidemenu";
+import NoticeList from "pages/Notice/NoticeList/noticelist";
+import noticedetail from "pages/Notice/NoticeDetail/noticedetail";
+import noticeupload from "pages/Notice/NoticeUpload/noticeupload";
 
 function App() {
   return (
@@ -13,13 +15,15 @@ function App() {
       {/*헤더랑 화면이 같이 뜨게 하는법 */}
       <BrowserRouter>
         <Header />
-        <Sidemenu />
         <div>
           <Switch>
             <Route path="/worklog" component={WorkLog} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/dashboard" component={DashBoardAD} />
+            <Route exact path="/notice" component={NoticeList} />
+            <Route exact path="/notice/detail" component={noticedetail} />
+            <Route exact path="/notice/upload" component={noticeupload} />
           </Switch>
         </div>
       </BrowserRouter>
