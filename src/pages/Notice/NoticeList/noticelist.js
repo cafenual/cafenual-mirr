@@ -42,7 +42,7 @@ const index = () => {
               </tr>
             </thead>
             <tbody>
-              <a href="/notice/detail">디테일</a>
+              <a href={`/notice/detail/`}>디테일</a>
             </tbody>
           </table>
         </div>
@@ -53,7 +53,4 @@ const index = () => {
   );
 };
 
-{
-  /* 질문사항 css float, pagination*/
-}
 export default index;
