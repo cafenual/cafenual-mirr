@@ -1,0 +1,54 @@
+#RecipeDetail {
+  margin: 30px;
+  .container {
+    display: flex;
+    height: 900px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      .img-area {
+        flex: 3;
+        border: black 1px solid;
+        margin-bottom: 10px;
+      }
+      .ingredient {
+        flex: 7;
+        border: black 1px solid;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+      .top-btn {
+        border: black 1px solid;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        .menuname {
+          flex: 7;
+        }
+        .listbtn {
+          flex: 1;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      .text-area {
+        border: black 1px solid;
+        flex: 7;
+      }
+      .bottom-btn {
+        border: black 1px solid;
+        flex: 1;
+        .edit,
+        .delete {
+          float: right;
+        }
+      }
+    }
+  }
+}

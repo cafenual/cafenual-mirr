@@ -1,0 +1,30 @@
+#RecipeHeader {
+  display: flex;
+  width: 500px;
+  margin-left: 280px;
+  margin-top: 7px;
+  a {
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  a:link {
+    color: rgb(69, 87, 87);
+  }
+  a:visited {
+    color: rgb(44, 90, 90);
+  }
+  a:active {
+    color: rgb(86, 159, 165);
+  }
+  a:hover {
+    color: black;
+  }
+
+  .coffee,
+  .non-coffee,
+  .dessert {
+    flex: auto;
+    width: 150px;
+    text-align: center;
+  }
+}

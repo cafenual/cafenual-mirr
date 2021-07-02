@@ -8,6 +8,8 @@ import DashBoardAD from "pages/Dashboard/DashBoardAD";
 import NoticeList from "pages/Notice/NoticeList/noticelist";
 import noticedetail from "pages/Notice/NoticeDetail/noticedetail";
 import noticeupload from "pages/Notice/NoticeUpload/noticeupload";
+import recipedetail from "pages/Recipe/RecipeDetail";
+import RecipeList from "pages/Recipe/RecipeList";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route exact path="/notice" component={NoticeList} />
             <Route exact path="/notice/detail" component={noticedetail} />
             <Route exact path="/notice/upload" component={noticeupload} />
+            <Route exact path="/menu/:categoryid?" component={RecipeList} />
+            <Route exact path="/menu/detail" component={recipedetail} />
           </Switch>
         </div>
       </BrowserRouter>

@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosCafe, IoMdListBox, IoMdBookmarks } from "react-icons/io";
 import { ImSpoonKnife, ImBell } from "react-icons/im";
-import "./Header.css";
+import "./Header.scss";
 const Header = () => {
   return (
     <div id="Header">
@@ -18,7 +18,7 @@ const Header = () => {
           </div>
           <div className="recipe flexbox">
             <ImSpoonKnife size="40" />
-            <span>메뉴</span>
+            <a href="/menu">메뉴</a>
           </div>
           <div className="hoto flexbox">
             <IoMdListBox size="40" />
