@@ -22,7 +22,7 @@ const Header = () => {
           </div>
           <div className="hoto flexbox">
             <IoMdListBox size="40" />
-            <span>인수인계</span>
+            <a href="/handoverlist">인수인계</a>
           </div>
           <div className="manual flexbox">
             <IoMdBookmarks size="40" />

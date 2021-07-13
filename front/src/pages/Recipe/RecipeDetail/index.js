@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
-const index = () => {
+
+const Recipedetail = () => {
   return (
     <div id="RecipeDetail">
       <div className="container">
@@ -31,4 +32,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Recipedetail;

@@ -41,7 +41,7 @@ const RecipeList = ({ match }) => {
           {fakeListData.map((data, index) => (
             <li>
               <div className="img-area">
-                <img className="coffee" />
+                <img className="image" />
               </div>
               <div className="txt-area">{data.name}</div>
             </li>
