@@ -23,7 +23,9 @@ export const register = async (req, res) => {
       name,
     });
 
+    await user.setPassword(password);
     await user.save();
+
     res.status(200).json({
       success: true,
       user,
