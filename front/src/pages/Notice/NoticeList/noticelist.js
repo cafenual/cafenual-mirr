@@ -2,7 +2,7 @@ import React from "react";
 import "./noticelist.scss";
 import { AiOutlineSearch } from "react-icons/ai";
 
-const index = () => {
+const noticelist = () => {
   return (
     <div id="notice">
       <div className="left">
@@ -53,4 +53,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default noticelist;

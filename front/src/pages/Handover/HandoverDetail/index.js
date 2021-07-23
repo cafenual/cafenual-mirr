@@ -6,10 +6,10 @@ const handoverdetail = () => {
     <div id="handoverdetail" className="page-layout">
       <div className="notice-cont">
         <div className="content-tit">
-          title
+          토요일에 예약있습니다
           <div className="tit-date"></div>
         </div>
-        <div className="content-cont"></div>
+        <div className="content-cont">예약내용</div>
         <div className="content-btn">
           <a className="btn-move">이전</a>
           <a className="btn-move">다음</a>

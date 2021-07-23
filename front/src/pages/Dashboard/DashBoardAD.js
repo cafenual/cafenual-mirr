@@ -30,6 +30,7 @@ const DashBoardAD = () => {
                   <button>출근하기</button>
                   <button>퇴근하기</button>
                 </center>
+                <a href="/profile">더 보기</a>
               </div>
               <div className="worklist">할 일</div>
             </div>

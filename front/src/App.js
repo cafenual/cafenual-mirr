@@ -13,6 +13,8 @@ import RecipeList from "pages/Recipe/RecipeList";
 import handoverupload from "pages/Handover/HandoverUpload";
 import handoverlist from "pages/Handover/HandoverList";
 import handoverdetail from "pages/Handover/HandoverDetail";
+import profile from "pages/Profile";
+import Sidemenu from "layouts/Sidemenu/Sidemenu";
 
 function App() {
   return (
@@ -33,7 +35,8 @@ function App() {
             <Route exact path="/menu/detail" component={recipedetail} />
             <Route exact path="/handoverlist" component={handoverlist} />
             <Route exact path="/handvoer/upload" component={handoverupload} />
-            <Route exact path="/handvoer/detail" component={handoverdetail} />
+            <Route exact path="/handvoer/detail" component={handoverdetail} />\
+            <Route exact path="/profile/" component={profile} />\
           </Switch>
         </div>
       </BrowserRouter>

@@ -1,0 +1,79 @@
+#Profile {
+  .container {
+    margin-top: 50px;
+    margin-left: 100px;
+    .top {
+      display: flex;
+      .tleft {
+        width: 250px;
+        display: flex;
+        .title {
+          display: flex;
+          align-items: center;
+          height: 75px;
+          .text {
+            margin-left: 15px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+      .tright {
+        margin-left: 50px;
+        width: 1050px;
+        .trtop {
+          border: black 1px solid;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          .box {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: black 1px solid;
+            .cont {
+              margin-left: 200px;
+            }
+          }
+          .head {
+            margin-left: 15px;
+          }
+        }
+        .trbottom {
+          margin-top: 20px;
+          border: black 1px solid;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          .box {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: black 1px solid;
+            .cont {
+              margin-left: 175px;
+            }
+          }
+          .head {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .bottom {
+      .bleft {
+        display: flex;
+        align-items: center;
+        .icon {
+          margin-left: 3px;
+        }
+        .text {
+          margin-left: 20px;
+          margin-bottom: 7px;
+        }
+        .edit {
+          margin-left: 1150px;
+        }
+      }
+    }
+  }
+}

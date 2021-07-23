@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom"; //withRouter를 사용해야 matc
 
 const RecipeList = ({ match }) => {
   const category = match.params.categoryid;
-  console.log(category);
+
   const fakeData = [
     {
       name: "아메라카노",

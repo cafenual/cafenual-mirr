@@ -22,6 +22,9 @@
     .menur {
       flex-grow: 1;
       .profile {
+        a {
+          text-decoration: none;
+        }
       }
       .worklist {
       }

@@ -20,10 +20,6 @@ const RecipeHeader = () => {
       name: "밀크티",
       category: "tea",
     },
-    {
-      name: "밀크티",
-      category: "tea",
-    },
   ];
 
   const [fakeListData, setFakeListData] = useState([]);
