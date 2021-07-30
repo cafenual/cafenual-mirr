@@ -14,8 +14,8 @@ const Sidemenu = () => {
         <div className="sch">
           <span>스케줄러</span>
         </div>
-        <div className="worktime">
-          <span>일한시간</span>
+        <div className="staff">
+          <a href="/staff">직원관리</a>
         </div>
       </div>
     </div>

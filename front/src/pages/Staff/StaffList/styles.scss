@@ -1,0 +1,98 @@
+#stafflist {
+  margin-left: 250px;
+  margin-top: 120px;
+  margin-right: 250px;
+  .container {
+    display: flex;
+    width: 100%;
+    .nav {
+      width: 250px;
+      float: left;
+    }
+    .cont {
+      width: 100%;
+      float: right;
+      .cont-top {
+        display: flex;
+        border-bottom: black 1px solid;
+        .left {
+          flex: 1;
+          border-right: black 1px solid;
+        }
+        .middle {
+          flex: 4;
+          text-align: center;
+          font-size: 20px;
+          height: 35px;
+        }
+        .right {
+          border-left: black 1px solid;
+          flex: 1;
+        }
+      }
+      .cont-list {
+        details {
+          margin-left: 199px;
+          margin-right: 199px;
+          summary {
+            list-style: none;
+          }
+          .detailbar {
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+            height: 30px;
+            line-height: 30px;
+            div {
+              flex: 1;
+              text-align: center;
+              font-weight: 400;
+            }
+          }
+          .detailflexbox {
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 250px;
+            .image {
+              width: 250px;
+              height: 250px;
+              border: black 1px solid;
+            }
+            .detailinfo {
+              margin-left: 35px;
+              font-size: 18px;
+            }
+          }
+        }
+
+        .bar {
+          margin-left: 199px;
+          margin-right: 199px;
+          display: flex;
+          height: 30px;
+          border-bottom: black 1px solid;
+          line-height: 30px;
+          div {
+            flex: 1;
+            text-align: center;
+            font-weight: 900;
+          }
+        }
+        .flexbox {
+          display: flex;
+          height: 30px;
+          border-bottom: black 1px solid;
+          line-height: 30px;
+          div {
+            flex: 1;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,7 @@ import handoverlist from "pages/Handover/HandoverList";
 import handoverdetail from "pages/Handover/HandoverDetail";
 import profile from "pages/Profile";
 import Sidemenu from "layouts/Sidemenu/Sidemenu";
+import StaffList from "pages/Staff/StaffList";
 
 function App() {
   return (
@@ -35,8 +36,9 @@ function App() {
             <Route exact path="/menu/detail" component={recipedetail} />
             <Route exact path="/handoverlist" component={handoverlist} />
             <Route exact path="/handvoer/upload" component={handoverupload} />
-            <Route exact path="/handvoer/detail" component={handoverdetail} />\
-            <Route exact path="/profile/" component={profile} />\
+            <Route exact path="/handvoer/detail" component={handoverdetail} />
+            <Route exact path="/profile" component={profile} />
+            <Route exact path="/staff" component={StaffList} />
           </Switch>
         </div>
       </BrowserRouter>
