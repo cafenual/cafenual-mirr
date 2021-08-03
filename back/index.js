@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
 import userRouter from "./routers/userRouter";
+import noticeRouter from "./routers/noticeRouter";
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -15,9 +16,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then(() =>
-    console.log(":white_check_mark::white_check_mark: 디비가 실행되었다..")
-  )
+  .then(() => console.log(" DB가 실행되었다.."))
   .catch((err) => console.log(err));
 
 const handleListening = () => {
@@ -25,5 +24,6 @@ const handleListening = () => {
 };
 
 app.use("/api/user", userRouter);
+app.use("/api/notice", noticeRouter);
 
 app.listen(process.env.PORT, handleListening);
