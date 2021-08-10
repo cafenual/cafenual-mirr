@@ -14,8 +14,8 @@ import handoverupload from "pages/Handover/HandoverUpload";
 import handoverlist from "pages/Handover/HandoverList";
 import handoverdetail from "pages/Handover/HandoverDetail";
 import profile from "pages/Profile";
-import Sidemenu from "layouts/Sidemenu/Sidemenu";
 import StaffList from "pages/Staff/StaffList";
+import Manual from "pages/Manual";
 
 function App() {
   return (
@@ -39,6 +39,7 @@ function App() {
             <Route exact path="/handvoer/detail" component={handoverdetail} />
             <Route exact path="/profile" component={profile} />
             <Route exact path="/staff" component={StaffList} />
+            <Route exact path="/manual/:categoryid?" component={Manual} />
           </Switch>
         </div>
       </BrowserRouter>

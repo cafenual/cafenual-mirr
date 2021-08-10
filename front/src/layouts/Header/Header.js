@@ -26,7 +26,7 @@ const Header = () => {
           </div>
           <div className="manual flexbox">
             <IoMdBookmarks size="40" />
-            <span>매뉴얼</span>
+            <a href="/manual">매뉴얼</a>
           </div>
         </div>
       </div>
