@@ -39,6 +39,11 @@ const UserSchema = new Schema(
       enum: ["admin", "parttime"],
       default: "parttime",
     },
+    phoneNumber: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     token: {
       //방문증, 로그인 유지
       type: String,
