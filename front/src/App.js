@@ -16,6 +16,7 @@ import handoverdetail from "pages/Handover/HandoverDetail";
 import profile from "pages/Profile";
 import StaffList from "pages/Staff/StaffList";
 import Manual from "pages/Manual";
+import Scheduler from "pages/Scheduler";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/profile" component={profile} />
             <Route exact path="/staff" component={StaffList} />
             <Route exact path="/manual/:categoryid?" component={Manual} />
+            <Route exact path="/scheduler" component={Scheduler} />
           </Switch>
         </div>
       </BrowserRouter>
