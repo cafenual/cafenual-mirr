@@ -3,12 +3,30 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import store from "./modules";
+import { Provider } from "react-redux";
+import { SetUser } from "modules/users";
+
+function loadUser() {
+  try {
+    let user = sessionStorage.getItem("user");
+    if (!user) return;
+
+    store.dispatch(SetUser(JSON.parse(user)));
+  } catch (e) {
+    console.log("logUser 오류");
+  }
+}
+
+loadUser();
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,8 +1,10 @@
 #Header {
+  display: flex;
   a {
     text-decoration: none;
   }
   .headerleft {
+    flex: 15;
     align-items: center;
     display: flex;
     border-bottom: 2px solid;
@@ -29,4 +31,8 @@
       align-items: center;
     }
   }
+  .headerr {
+    flex: 1;
+  }
 }
+

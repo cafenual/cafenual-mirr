@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./Login.css";
+import { SetUser } from "modules/users";
 
 const Login = () => {
-  const [error, setError] = useState();
-
   const history = useHistory();
+  const dispatch = useDispatch();
+
+  const [error, setError] = useState();
 
   const [form, setForm] = useState({
     email: "",
@@ -34,7 +37,22 @@ const Login = () => {
     };
 
     try {
-      await axios.post("http://localhost:4000/api/user/login", body);
+      const response = await axios.post(
+        "http://localhost:4000/api/user/login",
+        body
+      );
+      console.log(response.data.user);
+
+      const userBody = {
+        email: response.data.user.email,
+        name: response.data.user.name,
+        role: response.data.user.role,
+        wage: response.data.user.wage,
+        status: response.data.user.status,
+        phoneNumber: response.data.user.phoneNumber,
+      };
+      dispatch(SetUser(userBody));
+      sessionStorage.setItem("user", JSON.stringify(userBody));
       history.push("/Dashboard");
     } catch (e) {
       setError(e.response.data.message);

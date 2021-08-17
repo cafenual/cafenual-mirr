@@ -12,7 +12,7 @@ const Sidemenu = () => {
           <a href="/dashboard">대시보드</a>
         </div>
         <div className="sch">
-          <span>스케줄러</span>
+          <a href="/scheduler">스케줄러</a>
         </div>
         <div className="staff">
           <a href="/staff">직원관리</a>
